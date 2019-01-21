@@ -1,0 +1,175 @@
+/* skewed header */
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+.skewed-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.skewed-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .about-header{
+    background-color: #cea135;
+    color: #11122b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 175px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .about-header:hover{
+    letter-spacing: 1px;
+    color: aqua;
+}
+.skewed-header > .skewed-header-wrapper >.skewed-header-content >.nav-link-wrapper >.nav_link a{
+    text-decoration: none;
+   font-size: 16px;
+   font-weight: 100%;
+   color: #cea135;
+   padding: 0px 20px;
+   width:100%;
+   transition: 1s;
+   position: relative;
+} 
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .nav-link-wrapper >.nav_link > a:hover{
+    letter-spacing: 0.5px;
+    color: #cea135;
+}
+.page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-container >.page-content{
+    width: 1000px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page-container >.page-content > #chef{
+    width: 350px;
+    margin: 25px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border:  1.5px solid #cea135;
+    border-radius: 5px;
+    box-shadow: 5px 5px transparent;
+    transition: 1.2s;
+}
+.page-container >.page-content > #chef:hover{
+    box-shadow: 5px 5px black;
+}
+.page-container >.page-content p{
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+/* SQUARE GRID STYLE */
+.grid-layout{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.grid-layout >.squares{
+    width: 1000px;
+}
+.grid-layout >.squares >.square{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-layout >.squares >.square,.square1{
+    margin-top: -3px;
+}
+.square > .img-wrapper img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.grid-layout >.squares >.square1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.square1 > .img-wrapper img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.square  >.square-content{
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.square > .square-content{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.square  >.square-content h1{
+    color: #cea135;
+    line-height: 35px;
+}
+.square1 > .square-content{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.square1  >.square-content h1{
+    color: #cea135;
+    line-height: 35px;
+}
+.square1 .square-content p{
+    color: #11122b;
+}
+.square1  >.square-content{
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.square1  >.square-content{
+    color: #cea135;
+}
+.spacer{
+    height: 10px;
+    width: 100%;
+}

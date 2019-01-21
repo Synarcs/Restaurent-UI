@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    width: 1005;
+}
+.navigation-wrapper{
+    height: 170px;
+    background-color:#181839;
+    color: #cbcbcb;
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+.navigation-wrapper > .left-column{
+    display: flex;  
+    align-items: center;
+}
+.navigation-wrapper>.left-column > .icon{
+    margin-right: 15px;
+}
+.navigation-wrapper>.left-column >.icon i{
+    font-size: 2em;
+}   
+.left-column >.contact_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+ }
+ .navigation-wrapper>.left-column >.contact_wrapper > .phone-wrapper{
+    font-family: 'Roboto', sans-serif;
+ }
+ .navigation-wrapper>.left-column >.contact_wrapper > .hrswork-wrapper{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 12px;
+ }
+/* central wrapper */  
+.navigation-wrapper > .center-column{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    width: 500px;
+}
+.navigation-wrapper>.center-column >.logo-src{
+    display: flex;
+    justify-content: center;
+}
+.center-column >.links-wrapper >.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.center-column >.logo-src img{
+    width: 200px;
+    height: 100%;
+}
+/* .center-column >.links-wrapper>.nav_link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+} */
+
+.links-wrapper > .nav_link a{
+    width: 70px;
+    /* position: relative; */
+    display: block;
+}
+.links-wrapper a{
+    font-family:  'Ubuntu Condensed', sans-serif;  
+    color: #cbcbcb;
+    /* position: relative; */
+    text-decoration: none;
+    transition: 0.5s;
+}
+.links-wrapper > .nav_link > a:hover {
+    color: #cea135;
+    letter-spacing:2px;
+} 
+/* right nav bar */
+.navigation-wrapper > .right-column{
+    display: flex;
+    align-items: center;
+}
+.icon-adress{
+    padding-left: 20px;
+}
+.adress_wrapper{   
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+.icon-adress a{
+    font-size: 2em;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.adress_wrapper > a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.right-column >.adress_wrapper a:hover{
+    color: #cea135;
+}
+.right-column >.icon-adress a:hover{
+    color: #cea135;
+}
+    
